@@ -1,0 +1,19 @@
+{
+  "name": "oa",
+  "version": "1.0.0",
+  "description": "demo for test",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Joe Jiang",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}

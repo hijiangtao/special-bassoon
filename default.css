@@ -1,0 +1,124 @@
+/*
+ * @Author: Joe Jiang 
+ * @Date:   2017-08-17 19:30:15 
+ * @Last Modified by: Joe Jiang
+ * @Last Modified time: 2017-08-17 23:46:06
+ */
+
+#container {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.btnGroup {
+    width: 80px;
+}
+
+#box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+}
+
+#box.move {
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    left: 90%;
+    top: 50%;
+}
+
+button,
+select {
+    width: 5rem;
+    margin: 4px;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #c5c5c5;
+    border: none;
+    font-size: 1rem;
+}
+
+select {
+    background-color: #c5c5c5;
+    font-size: 1rem;
+}
+
+#dialog {
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    background-color: #fff;
+     display: none; 
+    border: 1px solid #8AC007;
+    border-radius: 4px;
+    border-top-width: 8px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+}
+
+#dialog.dialog-active {
+    display: block; 
+    /* opacity: 1;  */
+}
+
+.dialog-title {
+    width: 100%;
+}
+
+.dialog-title>span {
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+}
+
+.dialog-info {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.dialog-btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dialog-btn>div {
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 6px;
+    border-top: 1px solid #000;
+    align-items: stretch;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.dialog-btn>div:last-child {
+    border-left: 1px solid #000;
+    background-color: #8AC007;
+    color: #fff;
+}
+
+#bulletCanvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

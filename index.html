@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <title>渐变动画</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./default.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="btnGroup">
+            <button id="showTips">打开提示</button>
+            <button id="aniBtn">开始动画</button>
+            <button id="openBullet">开始弹幕</button>
+            <select id="moveApproach">
+                <option value="dynamic">动态</option>
+                <option value="static">静止</option>
+            </select>
+        </div>
+
+
+        <div id="box"></div>
+
+        <canvas id="bulletCanvas" width="400" height="400">
+            您的浏览器不支持canvas！
+        </canvas>
+
+    </div>
+
+    <div id="dialog">
+        <div class="dialog-title"><span>使用说明</span></div>
+        <div class="dialog-info">点击「开始动画／重制动画」按钮查看 DIV 红块滑动效果（由快至慢 5s 结束）；点击「打开提示／关闭提示」按钮查看使用说明；点击「开始弹幕／结束弹幕」查看弹幕效果，可通过 select 标签选定弹幕播放形式为固定显示或者滚动播放。</div>
+        <div class="dialog-btn">
+            <div class="dialogBtnGroup">取消</div>
+            <div class="dialogBtnGroup">确定</div>
+        </div>
+    </div>
+
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
